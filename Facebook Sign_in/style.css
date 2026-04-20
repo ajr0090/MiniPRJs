@@ -36,7 +36,7 @@ body {
 .logo-para p {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-2 {
@@ -50,7 +50,8 @@ body {
   overflow: hidden;
   border-radius: 10px;
   background-color: #eee5e5;
-  box-shadow:  4px 4px 10px 5px rgba(131, 112, 238, 0.2) 5px 5px 11px rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 4px 10px 5px rgba(131, 112, 238, 0.2) 5px 5px 11px
+    rgba(0, 0, 0, 0.19);
 }
 
 .form-container {
@@ -68,23 +69,22 @@ body {
   box-shadow: 4px 4px 10px 5px rgba(29, 3, 3, 0.2) 0 0 11px rgba(0, 0, 0, 0.19);
 }
 
-.form-container::before{
-  content: "";
+.form-container::before {
+  content: '';
   position: absolute;
   top: -50%;
   left: 5%;
   width: 50%;
   height: 400%;
   background-color: #120ef1;
-  box-shadow:  10px 10px 10px 5px  rgba(7, 10, 199, 0.1);
+  box-shadow: 10px 10px 10px 5px rgba(7, 10, 199, 0.1);
   border-radius: 10px;
   animation: animate 15s forwards infinite linear;
   z-index: -1;
 }
 @keyframes animate {
-  
   0% {
-    transform: rotate(0deg);  
+    transform: rotate(0deg);
     background-color: #120ef1;
   }
 
@@ -92,14 +92,13 @@ body {
     transform: rotate(180deg);
     background-color: #021f16;
   }
-  
+
   50% {
     transform: rotate(270deg);
     background-color: #15022b;
   }
 
   75% {
-    
     transform: rotate(360deg);
     background-color: #f7091c25;
   }
@@ -109,7 +108,6 @@ body {
     background-color: #120ef1;
   }
 }
-
 
 .form-container input {
   display: block;
@@ -125,7 +123,6 @@ body {
 .form-container input:focus-visible {
   outline: 1px solid #0842ff;
 }
-
 
 .form-container button {
   display: block;
@@ -194,4 +191,29 @@ body {
 
 .section-2 p a:hover {
   text-decoration: underline;
+}
+
+.dark {
+  background-color: #999;
+}
+
+.themebtn {
+  width: 150px;
+  height: 30px;
+  margin: 5px 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: #0867ff36;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 200;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.themebtn:hover {
+  opacity: 0.8;
+  color: #000;
 }
